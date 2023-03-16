@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Friends Popup</title>
+  <link rel="preload" href="fonts/MyriadPro-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MyriadPro-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MyriadPro-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MyriadPro-Black.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <h1 class="visually-hidden header__title">Promo</h1>
+    <button class="btn-reset promo__btn" data-graph-path="id1">Акции</button>
+  </div>
+</header>
+
+    <main class="main">
+    </main>
+    <div class="graph-modal">
+  <div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="id1">
+    <button class="btn-reset js-modal-close graph-modal__close popup__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="popup__image">
+        <picture>
+          <source srcset="./img/rolls.webp" type="image/webp">
+          <img loading="lazy" src="./img/rolls.png" class="image" width="424" height="234" alt="Сет роллов">
+        </picture>
+      </div>
+      <div class="popup__info">
+        <h2 class="popup__title">Больше скидок</h2>
+        <p class="popup__text">Акция 1+1 начнет действовать завтра в 10:00, а сейчас вы можете заказать сеты со скидкой</p>
+      </div>
+      <button class="btn-reset popup__btn">Заказать сеты</button>
+    </div>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>
